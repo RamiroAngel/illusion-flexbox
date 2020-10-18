@@ -9,48 +9,78 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div>
-            <header>
+        <header>
+            <div>
+                <h1>Illusion</h1>
+            </div>
+        </header>
+        <!--
+            I had this idea that the correct way to made a nav bar were enlisting each word, and then in order to 
+            re locate them we were supposed to use CSS, putting them side by side and cutting off the bullets:
+                <nav>
+                    <ul>
+                        <li><a href="" target="_self">Developing</a></li>
+                        <li><a href="" target="_self">Mobile</a></li>
+                        <li><a href="" target="_self">Videogames</a></li>
+                        <li><a href="" target="_self">Artificial Intelligence</a></li>
+                        <li><a href="" target="_self">Virtual Reality</a></li>
+                        <li><a href="" target="_self">Science</a></li>
+                        <li><a href="" target="_self">Fintech</a></li>
+                    </ul>
+                </nav>
+        -->
+        <!--But re checking the W3S information I understood that this is the correct way:-->
+        <nav>
+            <a href="" target="_self">Developing</a>
+            <a href="" target="_self">Mobile</a>
+            <a href="" target="_self">Videogames</a>
+            <a href="" target="_self">Artificial Intelligence</a>
+            <a href="" target="_self">Virtual Reality</a>
+            <a href="" target="_self">Science</a>
+            <a href="" target="_self">Fintech</a>
+        </nav>
+        <main>
+            <p>
+                <time>18/10/2020</time>
+            </p>
+            <section>
                 <div>
-                    <h1>Illusion</h1>
+                    <article>
+                        <a href="">Main news</a>
+                    </article>
                 </div>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="" target="_self">Developing</a></li>
-                    <li><a href="" target="_self">Mobile</a></li>
-                    <li><a href="" target="_self">Videogames</a></li>
-                    <li><a href="" target="_self">Artificial Intelligence</a></li>
-                    <li><a href="" target="_self">Virtual Reality</a></li>
-                    <li><a href="" target="_self">Science</a></li>
-                    <li><a href="" target="_self">Fintech</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <main>
-                <!--PONER FECHA-->
+            </section>
+            <section>
                 <div>
-                    <article><a href="">Main news</a></article>
+                    <article>
+                        <a href="">Article 1</a>
+                    </article>
+                    <article>
+                        <a href="">Article 2</a>
+                    </article>
+                    <article>
+                        <a href="">Article 3</a>
+                    </article>
+                    <article>
+                        <a href="">Article 4</a>
+                    </article>
                 </div>
+            </section>
+            <section>
                 <div>
-                    <article><a href="">Article 1</a></article>
-                    <article><a href="">Article 2</a></article>
-                    <article><a href="">Article 3</a></article>
-                    <article><a href="">Article 4</a></article>
+                    <article>
+                        <a href="">Article without picture 1</a>
+                    </article>
+                    <article>
+                        <a href="">Article without picture 2</a>
+                    </article>
                 </div>
-                <div>
-                    <article><a href="">Article without picture 1</a></article>
-                    <article><a href="">Article without picture 2</a></article>
-                </div>
-            </main>
-        </div>
-        <div>
-            <footer>
+            </section>
+        </main>
+        <footer>
+            <!--Same thought about the way the footer elements were going to be shown:
                 <div>
                     <h2><a href="" target="_self">Illusion</a></h2>
-                </div>
-                <div>
                     <p>Connect with us</p>
                     <li>Facebook</li>
                     <li>Twitter</li>
@@ -71,7 +101,33 @@
                 <div>
                     <p>Copyright © 2020 Illusion. All rights reserved.</p>
                 </div>
-            </footer>
-        </div>
+            -->
+            <!-- The way it has to be correctly done:-->
+            <div>
+                <h2><a href="" target="_self">Illusion</a></h2>
+                <h3>Connect with us</h3>
+                <p>
+                    <a href="" target="_self">Facebook</a>
+                    <a href="" target="_self">Instagram</a>
+                    <a href="" target="_self">Twitter</a>
+                    <a href="" target="_self">LinkedIN</a>
+                    <a href="" target="_self">YouTube</a>    
+                </p>                
+            </div>
+            <div>
+                <p>
+                    <a href="" target="_self">Terms of Use</a>
+                    <a href="" target="_self">About</a>
+                    <a href="" target="_self">Privacy Policy</a>
+                    <a href="" target="_self">Cookies Policy</a>
+                    <a href="" target="_self">FAQ</a>
+                    <a href="mailto:contact@illusion.com">Contact</a>
+                    <a href="" target="_self">Work with us</a>
+                </p>
+            </div>
+            <div>
+                <p>© Copyright 2020 Illusion. All rights reserved.</p>
+            </div>    
+        </footer>
     </body>
 </html>
