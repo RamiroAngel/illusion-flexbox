@@ -1,8 +1,10 @@
-@media only screen and (max-width: 768px) {
-    body{
-        font-family: serif;
-        color: black;
-        width: 100%;
+@media only screen and (min-width: 768px) {
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        width: 25%;
     }
 }
 
@@ -44,10 +46,6 @@ body{
     width: 400px;
     height: 250px;
 }
-.main-news-2{
-
-}
-
 .img-ps5{
     display: flex;
     width: 400px;

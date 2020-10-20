@@ -24,3 +24,16 @@ header{
 .capital-i{
     color: tomato;
 }
+.burguer{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+        .nav-bar{
+            display: none
+    }
+        .burguer{
+            display: flex;
+            justify-content: flex-end;
+    }
+}
