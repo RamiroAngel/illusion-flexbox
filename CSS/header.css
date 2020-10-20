@@ -1,13 +1,29 @@
 header{
     display: flex;
+    flex-direction: column;
+    background-color: darkslategray;
+    border-bottom: solid 15px;
+    border-bottom: tomato;
+    
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    background-color: lightsteelblue
+    border-bottom: solid 15px;
+    border-bottom: tomato;
 }
-
-#navbar{
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
-
 .capital-i{
     color: tomato;
 }
