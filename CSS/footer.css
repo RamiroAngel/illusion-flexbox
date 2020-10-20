@@ -3,6 +3,11 @@ footer{
     flex-direction: column;
     text-align: center;
     background-color: darkslategray;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: tomato;
+    margin: 0px;
+    padding: 0px;
 }
 
 
