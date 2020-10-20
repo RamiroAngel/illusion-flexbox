@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Trying my first Flexbox Desing</title>
         <meta name="description" content="Learning to apply flexbox">
         <meta name="keywords" content="Flexbox, responsive design, css">
         <meta name="viewport" content="width=device=width, initial-scale:1.0">
         <meta name="author" content="Ramiro Angel">
         <meta charset="UTF-8">
+        <title>Trying my first Flexbox Desing</title>
+        <!--<link rel="stylesheet" href="css/reset.css">-->
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
+            <div id="date">
+                <p>
+                    18/10/2020
+                </p>
+            </div>
+            <div id="branding">
+                <h1><span class="capital-i">I</span>llusion</h1>
+            </div>
             <div>
-                <h1>Illusion</h1>
+                <p>
+                    Rosario
+                </p>
             </div>
         </header>
-        <!--
-            I had this idea that the correct way to made a nav bar were enlisting each word, and then in order to 
-            re locate them we were supposed to use CSS, putting them side by side and cutting off the bullets:
-                <nav>
-                    <ul>
-                        <li><a href="" target="_self">Developing</a></li>
-                        <li><a href="" target="_self">Mobile</a></li>
-                        <li><a href="" target="_self">Videogames</a></li>
-                        <li><a href="" target="_self">Artificial Intelligence</a></li>
-                        <li><a href="" target="_self">Virtual Reality</a></li>
-                        <li><a href="" target="_self">Science</a></li>
-                        <li><a href="" target="_self">Fintech</a></li>
-                    </ul>
-                </nav>
-        -->
-        <!--But re checking the W3S information I understood that this is the correct way:-->
-        <nav>
-            <a href="" target="_self">Developing</a>
-            <a href="" target="_self">Mobile</a>
-            <a href="" target="_self">Videogames</a>
-            <a href="" target="_self">Artificial Intelligence</a>
-            <a href="" target="_self">Virtual Reality</a>
-            <a href="" target="_self">Science</a>
-            <a href="" target="_self">Fintech</a>
-        </nav>
+        <header>
+            <nav>
+                <div id="navbar">
+                    <a href="">Developing</a>
+                    <a href="">Mobile</a>
+                    <a href="">Videogames</a>
+                    <a href="">Artificial Intelligence</a>
+                    <a href="">Virtual Reality</a>
+                    <a href="">Science</a>
+                    <a href="">Fintech</a>
+                </div>
+            </nav>
+        </header>
         <main>
-            <p>
-                <time>18/10/2020</time>
-            </p>
-            <section>
-                <div>
+            <section title="main news">
+                <div id="main-news">
                     <article>
-                        <a href="">Main news</a>
+                        <a href=""><img src="img/xiaomi-mi-mix-alpha.png" alt="Xiaomi Mi Mix Alpha">Xiaomi presents the 
+                           new Xiaomi Mi Mix Alpha.</a>
                     </article>
                 </div>
             </section>
-            <section>
-                <div>
-                    <article>
-                        <a href="">Article 1</a>
+            <section title="secondary news">
+                <div id="secondary-news">
+                    <article class="secondary-news-1">
+                        <a href=""><img src="img/iphone-2020.png" alt="Iphone 5">Iphone 12 will be available in
+                        five colours.</a>
                     </article>
-                    <article>
-                        <a href="">Article 2</a>
-                    </article>
-                    <article>
-                        <a href="">Article 3</a>
-                    </article>
-                    <article>
-                        <a href="">Article 4</a>
+                    <article class="secondary-news-2">
+                        <a href=""><img src="img/ps5.png" alt="Playstation 5">Playstation 5 is about to be released.</a>
                     </article>
                 </div>
             </section>
-            <section>
-                <div>
-                    <article>
-                        <a href="">Article without picture 1</a>
+            <section title="side news">
+                <div id="side-news">
+                    <article class="side-news-1">
+                        <a href=""><img src="img/vr.png" alt="Woman wearing virtual reality glasses">Virtual Reality is
+                             a step closer to become mainstream.</a>
                     </article>
-                    <article>
-                        <a href="">Article without picture 2</a>
+                    <article class="side-news-2">
+                        <a href=""><img src="img/fintech.png" alt="A man holding a tablet projecting an hologram with
+                            the word Fintech">The growth of the Fintechs in 2020.</a>
+                    </article>
+            </section>
+            <section title="no foto news">
+                <div>
+                    <article class="no-fotonews-1">
+                        <a href="">DeFI Fever.</a>
+                    </article>
+                    <article class="no-fotonews-2">
+                        <a href="">Nintendo's 2021 Convention.</a>
                     </article>
                 </div>
             </section>
         </main>
         <footer>
-            <!--Same thought about the way the footer elements were going to be shown:
+            <div id="mainpage">
+                <h2><span class="capital-i">I</span>llusion</h2>
+            </div>
+            <div id="social">
+                <h3>Connect with us</h3>
+                <p>
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                    <a href="">LinkedIN</a>
+                    <a href="">YouTube</a>    
+                </p>                
+            </div>
+            <div id="footer">
+                <p>
+                    <a href="">Terms of Use</a>
+                    <a href="">About</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookies Policy</a>
+                    <a href="">FAQ</a>
+                    <a href="mailto:contact@illusion.com">Contact</a>
+                    <a href="">Work with us</a>
+                </p>
+            </div>
+            <div id="copyright">
+                <p> &copy; Copyright 2020 Illusion. All rights reserved.</p>
+            </div>    
+        </footer>
+    </body>
+</html>
+<!--
+            I had this idea that the correct way to made a nav bar were enlisting each word, and then in order to 
+            re locate them we were supposed to use CSS, putting them side by side and cutting off the bullets:
+                <nav>
+                    <ul>
+                        <li><a href="">Developing</a></li>
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">Videogames</a></li>
+                        <li><a href="">Artificial Intelligence</a></li>
+                        <li><a href="">Virtual Reality</a></li>
+                        <li><a href="">Science</a></li>
+                        <li><a href="">Fintech</a></li>
+                    </ul>
+                </nav>
+        -->
+        <!--But re checking the W3S information I understood that the the correct way is how I wrote it-->
+
+        <!--Same thought about the way the footer elements were going to be shown:
                 <div>
                     <h2><a href="" target="_self">Illusion</a></h2>
                     <p>Connect with us</p>
@@ -89,45 +142,17 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="" target="_self">Terms of Use</a></li>
-                        <li><a href="" target="_self">About</a></li>
-                        <li><a href="" target="_self">Privacy Policy</a></li>
-                        <li><a href="" target="_self">Cookies Policy</a></li>
-                        <li><a href="" target="_self">FAQ</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookies Policy</a></li>
+                        <li><a href="">FAQ</a></li>
                         <li><a href="mailto:contact@illusion.com">Contact</a></li>
-                        <li><a href="" target="_self">Work with us</a></li>
+                        <li><a href="">Work with us</a></li>
                     </ul>
                 </div>
                 <div>
                     <p>Copyright © 2020 Illusion. All rights reserved.</p>
                 </div>
             -->
-            <!-- The way it has to be correctly done:-->
-            <div>
-                <h2><a href="" target="_self">Illusion</a></h2>
-                <h3>Connect with us</h3>
-                <p>
-                    <a href="" target="_self">Facebook</a>
-                    <a href="" target="_self">Instagram</a>
-                    <a href="" target="_self">Twitter</a>
-                    <a href="" target="_self">LinkedIN</a>
-                    <a href="" target="_self">YouTube</a>    
-                </p>                
-            </div>
-            <div>
-                <p>
-                    <a href="" target="_self">Terms of Use</a>
-                    <a href="" target="_self">About</a>
-                    <a href="" target="_self">Privacy Policy</a>
-                    <a href="" target="_self">Cookies Policy</a>
-                    <a href="" target="_self">FAQ</a>
-                    <a href="mailto:contact@illusion.com">Contact</a>
-                    <a href="" target="_self">Work with us</a>
-                </p>
-            </div>
-            <div>
-                <p>© Copyright 2020 Illusion. All rights reserved.</p>
-            </div>    
-        </footer>
-    </body>
-</html>
+            <!-- Idem nav-->
