@@ -13,52 +13,56 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 75%;
+    width: 70%;
     margin-left: 10px;
 }
 .div1{
     display: flex;
     flex-direction: row;
 }
-.img-xiaomi{
+#main-news{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.img-xiaomi{
     width: 800px;
     height: 500px;
     margin-top: 10px;
 }
-#main-news{
-    display: flex;
-    flex-direction: column;
-}
 #secondary-news{
     display: flex;
-    align-items: center;
-    justify-content: space-around;  
+    text-align: center;
+}
+.secondary-news1{
+    flex: 50%; 
 }
 .img-iphones{
-    display: flex;
     width: 400px;
     height: 250px;
 }
+.secondary-news2{
+    flex: 50%; 
+}
 .img-ps5{
-    display: flex;
     width: 400px;
     height: 250px;
 }
 .sidebar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items:center;
-    width: 25%;
+    text-align: center;
+    width: 30%;
 }
 .img-vr{
-    display: flex;
     width: 200px;
     height: 140px;
 }
 .img-fintechs{
-    display: flex;
     width: 200px;
     height: 140px;
 }
@@ -96,18 +100,19 @@ a:hover{
 }
 
 @media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     .sidebar{
         display: flex;
         flex-wrap: wrap;
     }
-    .secondary-news{
-        flex-wrap: wrap;
-        flex: 100%;
-    }
-    .div2{
+    .secondary-news, .div2{
         flex-wrap: wrap;
     }
-    .no-foto-news1, .no-foto-news2{
-        flex: 100%;
+    .secondary-news1, .secondary-news2, .no-foto-news1, .no-foto-news2{
+        /*flex: 100%;*/
+        flex-direction: column;
     }
 }
